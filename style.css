@@ -1,3 +1,11 @@
+/** Game  **/
+
+#game {
+  text-align: center;
+}
+
+/** Button **/
+
 button {
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -10,9 +18,9 @@ button {
   -moz-border-radius: 10px;
   border-radius: 10px;
 
-  background: -webkit-linear-gradient(top, #a3a3a3, #000);
-  background: -moz-linear-gradient(top, #a3a3a3, #000);
-  background: linear-gradient(top, #a3a3a3, #000);
+  background: -webkit-linear-gradient(top, red, #000);
+  background: -moz-linear-gradient(top, red, #000);
+  background: linear-gradient(top, red, #000);
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -20,9 +28,9 @@ button {
 }
 
 button:hover {
-  background: -webkit-linear-gradient(top, #acc7a3, #506651);
-  background: -moz-linear-gradient(top, #acc7a3, #506651);
-  background: linear-gradient(top, #acc7a3, #506651);
+  background: -webkit-linear-gradient(top, #00FFFF, #506651);
+  background: -moz-linear-gradient(top, #00FFFF, #506651);
+  background: linear-gradient(top, #00FFFF, #506651);
 }
 
 button:active {
@@ -38,6 +46,7 @@ button:active {
   height: 33px;
   position: relative;
   border: 1px solid black;
+  margin: 0 auto;
 }
 
 #scale {

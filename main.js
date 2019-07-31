@@ -6,11 +6,11 @@ var guessMade = 0;
 var gameSate = "";
 var gameWon = false;
 
-// Select input and output HTML id elements
+// Connect HTML element tags to Javascript
+
+// Input and Output
 var input = document.querySelector('#input');
 var output = document.querySelector('#output');
-
-// Connect HTML element tags to Javascript
 
 // Button
 var button = document.querySelector('button');
@@ -46,6 +46,8 @@ function validateGuess() {
 
   if(isNaN(playerGuess)) {
     output.innerHTML = "Please enter a number.";
+  } else if(playerGuess < 0 || playerGuess > 99) {
+    output.innerHTML = "Please enter a number between 0 and 99.";
   } else {
     playGame();
   }
