@@ -10,19 +10,31 @@ var gameWon = false;
 var input = document.querySelector('#input');
 var output = document.querySelector('#output');
 
-// Select button variable HTML element
+// Connect HTML element tags to Javascript
+
+// Button
 var button = document.querySelector('button');
 button.style.cursor = "pointer";
 // Add a event lister to button
 button.addEventListener("click", clickHandler, false);
 
-// Adding enter key listener
+// Enter key
 window.addEventListener("keydown", keydownHandler, false);
 function keydownHandler(event){
   // Enter key code is 13
   if(event.keyCode === 13) {
     validateGuess();
   }
+}
+
+// Arrow
+var arrow = document.querySelector('#arrow');
+
+function render(){
+  // Position the arrow
+    // multiply player guess by 3
+    // move arrow's pixel position on the scale 
+    arrow.style.left = playerGuess * 3 + 'px';
 }
 
 function clickHandler(){
@@ -83,4 +95,6 @@ function playGame(){
     gameWon = true;
     endGame()
   }
+
+  render();
 }
